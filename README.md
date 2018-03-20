@@ -16,34 +16,34 @@
 
 - [tail 尾部内容处理](./src/tail.md) - done
 
-- [scp]
+- [scp 加密的方式在本地主机和远程主机之间复制文件](./src/scp.md)
 
-- [cut]
+- [cut 连接文件并打印到标准输出设备上](./src/cut.md)
 
-- [which]
+- [which 查找并显示给定命令的绝对路径](./src/which.md)
 
-- [find]
+- [find 在指定目录下查找文件](./src/find.md)
 
-- [chmod]
+- [chmod 变更文件或目录的权限](./src/chomd.md)
 
-- [rname]
+- [rname 去除文件名中的非目录部分](./src/rname.md)
 
-- [ls]
+- [ls 显示目录内容列表](./src/ls.md)
 
-- [ln]
+- [ln 为文件创建软链](./src/ln.md)
 
-- [mv]
+- [mv 对文件或目录重新命名](./src/mv.md)
 
-- [cat]
+- [cat 连接文件并打印到标准输出设备上](./src/cat.md)
 
-- [cp]
+- [cp 将源文件或目录复制到目标文件或目录中](./src/cp.md)
 
-- [rm]
+- [rm 删除给定的文件和目录](./src/rm.md)
 
-- [look]
+- [look 显示文件中以指定字符串开头的任意行](./src/look.md)
 
-- [dirs]
+- [dirs 显示目录记录](./src/dirs.md)
 
-- [diff]
+- [diff 比较给定的两个文件的不同](./src/diff.md)
 
-- [rmdir]
+- [rmdir 用来删除空目录](./src/rmdir.md)
