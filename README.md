@@ -34,13 +34,9 @@
 
 - [cat 连接文件并打印到标准输出设备上](./src/cat.md) - done
 
-- [cp 将源文件或目录复制到目标文件或目录中](./src/cp.md)
+- [cp 将源文件或目录复制到目标文件或目录中](./src/cp.md) - done
 
-- [rm 删除给定的文件和目录](./src/rm.md)
-
-- [look 显示文件中以指定字符串开头的任意行](./src/look.md)
-
-- [dirs 显示目录记录](./src/dirs.md)
+- [rm 删除给定的文件和目录](./src/rm.md) - done
 
 - [diff 比较给定的两个文件的不同](./src/diff.md)
 
