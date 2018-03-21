@@ -20,12 +20,18 @@
 
 - 创建压缩文件
 
-	`tar -cvf example/tar/example1-1.tar.gz example/tar/example1/`
+```
+tar -cvf example/tar/example1-1.tar.gz example/tar/example1/
+```
 
 - 解压
 
-	`tar -xvf example/tar/example1-1.tar.gz example/tar/example1`
+```
+tar -xvf example/tar/example1-1.tar.gz example/tar/example1
+```
 
 - 查看压缩文件内容
 
-	`tar -tvf example/tar/example1-1.tar.gz`
+```
+tar -tvf example/tar/example1-1.tar.gz
+```

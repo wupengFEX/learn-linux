@@ -16,12 +16,21 @@
 
 - 计算文件内容字节数
 
-	`wc -c example/wc/example1/example1-1.md`
+```
+➜  learn-linux git:(master) ✗ wc -c example/wc/example1/example1-1.md
+     302 example/wc/example1/example1-1.md
+```
 	
 - 计算行数
 
-	`wc -l example/wc/example1/example1-1.md`
+```
+➜  learn-linux git:(master) ✗ wc -l example/wc/example1/example1-1.md
+       8 example/wc/example1/example1-1.md
+```
 
 - 计算列数
 
-	`wc -w example/wc/example1/example1-1.md`
+```
+➜  learn-linux git:(master) ✗ wc -w example/wc/example1/example1-1.md
+      30 example/wc/example1/example1-1.md
+```

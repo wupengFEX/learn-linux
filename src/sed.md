@@ -25,40 +25,82 @@
 
 ## 常用命令
 
-- 替换文本中的字符串
+### 替换文本中的字符串
 
-	`sed 's/examples/example/' example/sed/example1/example1-1.md`
+```
+➜  learn-linux git:(master) ✗ sed 's/examples/example/' example/sed/example1/example1-1.md
+# sed 命令的 example。
 
-- 替换文本并写入到文件
+# sed 命令的 example。
 
-	`sed -i 's/examples/example/' example/sed/example1/example1-1.md`
+# sed 命令的 example。
+```
 
-	注：MAC 下需要指定变量暂存替换字符串，如不需要则指定为空，`sed -i "" 's/examples/example/' example/sed/example1/example1-1.md`
+### 替换文本并写入到文件
 
-- 替换第 n 个匹配到的字符串
+```
+➜  learn-linux git:(master) ✗ sed -i '' 's/examples/example/' example/sed/example1/example1-1.md
+```
 
-	`echo "examplesexamplesexamples" | sed "s/examples/EXAMPLES/2"`
-	`echo "examplesexamplesexamples" | sed "s/examples/EXAMPLES/3"`
+注：MAC 下需要指定变量暂存替换字符串，如不需要则指定为空，`sed -i "" 's/examples/example/' example/sed/example1/example1-1.md`
 
-- 删除第 n 行
+### 替换第 n 个匹配到的字符串
 
-	`sed "2d" example/sed/example1/example1-1.md`
-	`sed "3d" example/sed/example1/example1-1.md`
+```
+➜  learn-linux git:(master) ✗ echo "examplesexamplesexamples" | sed "s/examples/EXAMPLES/2"
+examplesEXAMPLESexamples
 
-- 删除符合某个正则的字符串所在的行
+➜  learn-linux git:(master) ✗ echo "examplesexamplesexamples" | sed "s/examples/EXAMPLES/3"
+examplesexamplesEXAMPLES
+```
 
-	`sed '/examples/'d example/sed/example1/example1-1.md`
+### 删除第 n 行
 
-- 组合多个表达式
+```
+➜  learn-linux git:(master) ✗ sed "2d" example/sed/example1/example1-1.md
+# sed 命令的 example。
+# sed 命令的 example。
 
-	`echo "examplesexamplesexamples" | sed "s/examples/EXAMPLES/1" | sed "s/examples/EXAMPLES/2"`
+# sed 命令的 example。
 
-- 在第 n 行后插入文本
 
-	`sed -i '' '2a\ this is a pen' example/sed/example1/example1-1.md`
+➜  learn-linux git:(master) ✗ sed "3d" example/sed/example1/example1-1.md
+# sed 命令的 example。
 
-	注意：MAC 下 `a\` 后需要进行换行。
 
-- 在第 n 行前插入文本
+# sed 命令的 example。
+```
 
-	`sed -i '' '2i\ this is a pen' example/sed/example1/example1-1.md`
+### 删除符合某个正则的字符串所在的行
+
+```
+➜  learn-linux git:(master) ✗ sed '/examples/'d example/sed/example1/example1-1.md
+# sed 命令的 example。
+
+# sed 命令的 example。
+
+# sed 命令的 example。
+```
+
+### 组合多个表达式
+
+```
+➜  learn-linux git:(master) ✗ echo "examplesexamplesexamples" | sed "s/examples/EXAMPLES/1" | sed "s/examples/EXAMPLES/2"
+EXAMPLESexamplesEXAMPLES
+```
+
+### 在第 n 行后插入文本
+
+```
+➜  learn-linux git:(master) ✗ sed -i '' '2a\
+quote> this is a pen' example/sed/example1/example1-1.md
+```
+
+注意：MAC 下 `a\` 后需要进行换行。
+
+### 在第 n 行前插入文本
+
+```
+➜  learn-linux git:(master) ✗ sed -i '' '2i\
+quote> this is a pen' example/sed/example1/example1-1.md
+```

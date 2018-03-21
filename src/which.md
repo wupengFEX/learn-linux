@@ -12,7 +12,7 @@
 
 ### 找到 node 安装路径
 
-```
+```shell
 ➜  learn-linux git:(master) ✗ which node
 /usr/local/bin/node
 ```

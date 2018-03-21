@@ -16,14 +16,20 @@
 
 ## 常用命令
 
-- 查看显示行号的文件内容
+### 查看显示行号的文件内容
 
-	`less -N example/less/example1/example1-1.md`
+```
+less -N example/less/example1/example1-1.md
+```
 
-- 将多行空格压缩成一行显示
+### 将多行空格压缩成一行显示
 
-	`less -s example/less/example1/example1-1.md`
+```
+less -s example/less/example1/example1-1.md
+```
 	
-- 将需要换行的一段文字展示在一行
+### 将需要换行的一段文字展示在一行
 
-	`less -S example/less/example1/example1-1.md`
+```
+less -S example/less/example1/example1-1.md
+```
