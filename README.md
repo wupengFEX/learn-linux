@@ -16,7 +16,7 @@
 
 - [tail 尾部内容处理](./src/tail.md) - done
 
-- [scp 加密的方式在本地主机和远程主机之间复制文件](./src/scp.md)
+- [scp 加密的方式在本地主机和远程主机之间复制文件](./src/scp.md) - done
 
 - [cut 连接文件并打印到标准输出设备上](./src/cut.md)
 
