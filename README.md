@@ -22,17 +22,15 @@
 
 - [which 查找并显示给定命令的绝对路径](./src/which.md) - done
 
-- [find 在指定目录下查找文件](./src/find.md)
+- [find 在指定目录下查找文件](./src/find.md) - done
 
 - [chmod 变更文件或目录的权限](./src/chmod.md) - done
 
-- [rname 去除文件名中的非目录部分](./src/rname.md)
-
-- [ls 显示目录内容列表](./src/ls.md)
+- [ls 显示目录内容列表](./src/ls.md) - done
 
 - [ln 为文件创建软链](./src/ln.md)
 
-- [mv 对文件或目录重新命名](./src/mv.md)
+- [mv 对文件或目录重新命名](./src/mv.md) - done
 
 - [cat 连接文件并打印到标准输出设备上](./src/cat.md)
 
@@ -46,7 +44,7 @@
 
 - [diff 比较给定的两个文件的不同](./src/diff.md)
 
-- [rmdir 用来删除空目录](./src/rmdir.md)
+- [rmdir 用来删除空目录](./src/rmdir.md) - done
 
 - [wc 统计文件的字节数、字数、行数](./src/wc.md) - done
 
