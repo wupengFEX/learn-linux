@@ -18,7 +18,7 @@
 
 - [scp 加密的方式在本地主机和远程主机之间复制文件](./src/scp.md) - done
 
-- [cut 连接文件并打印到标准输出设备上](./src/cut.md)
+- [cut 连接文件并打印到标准输出设备上](./src/cut.md) - done
 
 - [which 查找并显示给定命令的绝对路径](./src/which.md) - done
 
@@ -32,7 +32,7 @@
 
 - [mv 对文件或目录重新命名](./src/mv.md) - done
 
-- [cat 连接文件并打印到标准输出设备上](./src/cat.md)
+- [cat 连接文件并打印到标准输出设备上](./src/cat.md) - done
 
 - [cp 将源文件或目录复制到目标文件或目录中](./src/cp.md)
 
