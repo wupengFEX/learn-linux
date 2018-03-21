@@ -24,7 +24,7 @@
 
 - [find 在指定目录下查找文件](./src/find.md)
 
-- [chmod 变更文件或目录的权限](./src/chomd.md)
+- [chmod 变更文件或目录的权限](./src/chomd.md) - done
 
 - [rname 去除文件名中的非目录部分](./src/rname.md)
 
@@ -47,3 +47,7 @@
 - [diff 比较给定的两个文件的不同](./src/diff.md)
 
 - [rmdir 用来删除空目录](./src/rmdir.md)
+
+- [wc 统计文件的字节数、字数、行数](./src/wc.md) - done
+
+- [less 分屏上下翻页浏览文件内容](./src/less.md) - done
