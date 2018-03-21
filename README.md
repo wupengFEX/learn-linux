@@ -36,7 +36,7 @@
 
 - [rm 删除给定的文件和目录](./src/rm.md) - done
 
-- [diff 比较给定的两个文件的不同](./src/diff.md)
+- [diff 比较给定的两个文件的不同](./src/diff.md) - done
 
 - [rmdir 用来删除空目录](./src/rmdir.md) - done
 
