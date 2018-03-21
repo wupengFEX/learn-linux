@@ -20,7 +20,7 @@
 
 - [cut 连接文件并打印到标准输出设备上](./src/cut.md)
 
-- [which 查找并显示给定命令的绝对路径](./src/which.md)
+- [which 查找并显示给定命令的绝对路径](./src/which.md) - done
 
 - [find 在指定目录下查找文件](./src/find.md)
 

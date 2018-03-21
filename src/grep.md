@@ -20,49 +20,104 @@
 
 ## 常用命令
 
-- 单个文件搜索文本
+### 单个文件搜索文本
 
-	`grep "grep" example/grep/example1/example1-1.md`
+```
+➜  learn-linux git:(master) ✗ grep "grep" example/grep/example1/example1-1.md
+# grep 命令的第一个 example。
+```
 
-- 多个文件搜索文本
+### 多个文件搜索文本
 
-	多个文件之间以空格隔开。
+多个文件之间以空格隔开。
 
-	`grep "grep" example/grep/example1/example1-1.md example/grep/example1/example1-2.md`
+```
+➜  learn-linux git:(master) ✗ grep "grep" example/grep/example1/example1-1.md example/grep/example1/example1-2.md
+example/grep/example1/example1-1.md:# grep 命令的第一个 example。
+example/grep/example1/example1-2.md:# grep 命令的第一个 example。
+```
 
-- 单/多目录搜索
+### 单/多目录搜索
 
-	`grep -r "grep" example/grep/example1/`
-	`grep -r "grep" example/grep/example1/ example/grep/example2/`
+```
+➜  learn-linux git:(master) ✗ grep -r "grep" example/grep/example1/
+example/grep/example1//example1-1.md:# grep 命令的第一个 example。
+example/grep/example1//example1-2.md:# grep 命令的第一个 example。
 
-- 输出匹配字符串所在行数
+➜  learn-linux git:(master) ✗ grep -r "grep" example/grep/example1/ example/grep/example2/
+example/grep/example1//example1-1.md:# grep 命令的第一个 example。
+example/grep/example1//example1-2.md:# grep 命令的第一个 example。
+example/grep/example2//example2.md:# # grep 命令的第二个 example。
+```
 
-	`grep -n "grep" example/grep/example1/example1-1.md`
+### 输出匹配字符串所在行数
 
-- 输出匹配及其后的 n 行
+```
+➜  learn-linux git:(master) ✗ grep -n "grep" example/grep/example1/example1-1.md
+1:# grep 命令的第一个 example。
+```
 
-	`grep -r -A 2 "grep" example/grep/example1/`
+### 输出匹配及其后的 n 行
 
-- 统计每个文件搜索到的总数
+```
+➜  learn-linux git:(master) ✗ grep -r -A 2 "grep" example/grep/example1/
+example/grep/example1//example1-1.md:# grep 命令的第一个 example。
+example/grep/example1//example1-1.md-
+example/grep/example1//example1-1.md-# GrEp 命令的第一个 example。
+--
+example/grep/example1//example1-2.md:# grep 命令的第一个 example。
+```
 
-	`grep -rc "grep" example/grep/example1`
+### 统计每个文件搜索到的总数
 
-- 不区分大小写搜索
+```
+➜  learn-linux git:(master) ✗ grep -rc "grep" example/grep/example1
+example/grep/example1/.DS_Store:0
+example/grep/example1/example1-1.md:1
+example/grep/example1/example1-2.md:1
+```
 
-	`grep -ri "grep" example/grep/example1`
+### 不区分大小写搜索
 
-- 列出内容符合搜索 pattern 的文件名
+```
+➜  learn-linux git:(master) ✗ grep -ri "grep" example/grep/example1
+example/grep/example1/example1-1.md:# grep 命令的第一个 example。
+example/grep/example1/example1-1.md:# GrEp 命令的第一个 example。
+example/grep/example1/example1-2.md:# grep 命令的第一个 example。
+```
 
-	`grep -rl "grep" example/grep/example1`
+### 列出内容符合搜索 pattern 的文件名
 
-- 列出内容符合搜索 pattern 的文件名
+```
+➜  learn-linux git:(master) ✗ grep -rl "grep" example/grep/example1
+example/grep/example1/example1-1.md
+example/grep/example1/example1-2.md
+```
 
-	`grep -rL "grep" example/grep/example1`
+### 列出内容不符合搜索 pattern 的文件名
 
-- 只输出匹配的文本
+```
+➜  learn-linux git:(master) ✗ grep -rL "grep" example/grep/example1
 
-	`grep -ro "grep" example/grep/example1`
+```
 
-- 正则搜索
+### 只输出匹配的文本
 
-	`grep -rE "[a-z]" example/grep`
+```
+➜  learn-linux git:(master) ✗ grep -ro "grep" example/grep/example1
+example/grep/example1/example1-1.md:grep
+example/grep/example1/example1-2.md:grep
+```
+
+### 正则搜索
+
+```
+➜  learn-linux git:(master) ✗ grep -rE "[a-z]" example/grep
+Binary file example/grep/.DS_Store matches
+Binary file example/grep/example1/.DS_Store matches
+example/grep/example1/example1-1.md:# grep 命令的第一个 example。
+example/grep/example1/example1-1.md:# GrEp 命令的第一个 example。
+example/grep/example1/example1-2.md:# grep 命令的第一个 example。
+Binary file example/grep/example2/.DS_Store matches
+example/grep/example2/example2.md:# # grep 命令的第二个 example。
+```

@@ -26,4 +26,6 @@
 
 ### 使得文件夹具有递归修改权限
 
-	`chmod -R 777 example/chmod`
+```
+learn-linux git:(master) chmod -R 777 example/chmod
+```
