@@ -28,8 +28,6 @@
 
 - [ls 显示目录内容列表](./src/ls.md) - done
 
-- [ln 为文件创建软链](./src/ln.md)
-
 - [mv 对文件或目录重新命名](./src/mv.md) - done
 
 - [cat 连接文件并打印到标准输出设备上](./src/cat.md) - done
